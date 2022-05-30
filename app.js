@@ -8,8 +8,7 @@ const app = express();
 
 const httpServer=http.createServer(app);
 
-const webSocketServer = ws.createServer(httpServer);
-
+const webSocketServer =new  ws.WebSocketServer({server:httpServer});
 app.get('/ping',(request,response)=>{
     response.sendStatus(200);
 });
