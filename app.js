@@ -10,7 +10,7 @@ const httpServer=http.createServer(app);
 
 const webSocketServer =new  ws.WebSocketServer({server:httpServer});
 app.get('/ping',(request,response)=>{
-    response.sendDate('You pinged GENERIX back');
+    response.send('You pinged GENERIX back');
 });
 
 
