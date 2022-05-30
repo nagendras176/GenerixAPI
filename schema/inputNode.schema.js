@@ -1,12 +1,10 @@
-const mongoose = require('mongoose');
+import { Schema } from 'mongoose';
 
 
-const inputNode = new mongoose.Schema({
+const inputNode = new Schema({
     id:String,
     controller_id: String
 });
 
 
-module.exports = {
-    inputNodeSchema: inputNode
-}
+export const inputNodeSchema = inputNode;
