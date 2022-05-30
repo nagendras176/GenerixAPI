@@ -1,12 +1,10 @@
-const mongoose = require('mongoose');
+import { Schema } from 'mongoose';
 
 
-const ControllerSchema = new mongoose.Schema({
+const ControllerSchema = new Schema({
      id: String,
      controllerName: String
 });
 
 
-module.exports = {
-    controllerSchema: ControllerSchema
-}
+export const controllerSchema = ControllerSchema;
